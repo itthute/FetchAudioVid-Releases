@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 10009,
+  "versionName": "1.0.9",
+  "minAndroidApi": 26,
+  "apkUrl": "https://drive.google.com/uc?export=download&id=1iFrZ97gyGD7Hj4oztB0PcQa-6o987jwo",
+  "sha256": "063867dea9af2b6b5248b674eead4e5a2caf87f4db83b0e01bf76787a0f957c6",
+  "releaseNotes": "Adds clear elapsed-time activity indicators for dependency installation, maintenance, update, migration, rename and media-refresh operations."
+}
