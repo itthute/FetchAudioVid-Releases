@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "versionCode": 10009,
-  "versionName": "1.0.9",
+  "versionCode": 10010,
+  "versionName": "1.0.10",
   "minAndroidApi": 26,
-  "apkUrl": "https://github.com/itthute/FetchAudioVid-Releases/releases/download/v1.0.9/ITthuteFetchAudioVid.apk",
-  "sha256": "063867dea9af2b6b5248b674eead4e5a2caf87f4db83b0e01bf76787a0f957c6",
+  "apkUrl": "https://github.com/itthute/FetchAudioVid-Releases/releases/download/v1.0.10/ITthuteFetchAudioVid.apk",
+  "sha256": "28a9098542f85aa262b28b426f38fd517dc9fc2efc7ad5a239ae2bdf83ac293b",
   "releaseNotes": "Adds clear elapsed-time activity indicators for dependency installation, maintenance, update, migration, rename and media-refresh operations."
 }
