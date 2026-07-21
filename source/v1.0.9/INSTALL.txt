@@ -1,0 +1,53 @@
+ITTHUTE FETCH AUDIOVID 1.0.9
+INSTALLATION AND TEST CHECKLIST
+
+IN-PLACE UPDATE
+
+Version 1.0.9 keeps:
+
+za.co.itthute.fetchaudiovid
+
+and the established ITthute signing certificate. Install ITthuteFetchAudioVid-v1.0.9.apk over v1.0.8 and choose Update. Do not uninstall Termux.
+
+LONG-RUNNING ACTION INDICATOR TEST
+
+1. Open Tools.
+2. Tap Guided setup / migration wizard.
+3. Tap Install / repair dependencies automatically and confirm Start.
+4. Confirm that a non-dismissible Operation in progress dialog appears immediately.
+5. Confirm it shows the operation name, explanatory text, a moving progress indicator and a live elapsed-time counter.
+6. Confirm the screen stays awake and other app actions cannot be tapped accidentally.
+7. Tap Copy current diagnostics if desired; the dialog must remain open.
+8. Wait for completion. The indicator should close automatically and the normal completion result should appear.
+
+Repeat representative checks for:
+
+- Run full setup verification;
+- Check Termux dependency updates;
+- Guided dependency upgrade / repair;
+- Switch yt-dlp stable/nightly channel;
+- Rename a downloaded media file;
+- Check for ITthute Fetch AudioVid update;
+- user-requested Refresh last downloaded media in Android.
+
+DOWNLOAD PROGRESS
+
+Media downloads continue to show their real completion percentage, transfer speed, ETA and processing state on the Download tab. The new modal maintenance indicator is intentionally not placed over an active media download, so the user can still view progress and use Cancel active download.
+
+DOWNLOADED MEDIA LIST
+
+The Downloaded Media tab keeps its inline Loading media message and disabled refresh button during a directory scan. This avoids a disruptive modal dialog for an operation that normally finishes quickly.
+
+DIAGNOSTICS
+
+Open Diagnostics and tap Copy complete diagnostic report. Version 1.0.9 includes the visible-operation state, operation type, label and start time. TermuxResultService clears stale command-operation markers when a command completes, even if the main activity was temporarily not visible.
+
+REGRESSION CHECKS
+
+1. Run full setup verification.
+2. Perform a small authorised video or audio download.
+3. Confirm Android media indexing completes.
+4. Confirm Downloaded Media remains sorted newest first.
+5. Confirm filenames remain safe ASCII without emojis or unsafe special characters.
+6. Confirm media rename and Android playback chooser still work.
+7. Confirm app lock authentication still works after leaving and reopening the app.
