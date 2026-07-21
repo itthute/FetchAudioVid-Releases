@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 10013,
+  "versionName": "1.0.13",
+  "minAndroidApi": 26,
+  "apkUrl": "https://github.com/itthute/FetchAudioVid-Releases/releases/latest/download/ITthuteFetchAudioVid.apk",
+  "sha256": "e546e496ea86274ce7b221fcf89cb3b092aa146511f778424cf994f275875947",
+  "releaseNotes": "Adds secure optional website-cookie import, rejects non-media URLs, and improves Android 16 Termux command launching while retaining the 1.0.12 download and MediaStore fixes."
+}
