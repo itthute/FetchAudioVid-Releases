@@ -1,0 +1,21 @@
+# Private release materials must never be committed
+*.p12
+*.jks
+*.keystore
+*PRIVATE-BUNDLE*.zip
+*SIGNING-CREDENTIALS*.txt
+*sephiri*.txt
+cookies.txt
+*.cookies.txt
+
+# Android/local build outputs
+build/
+out/
+*.class
+*.dex
+*.unsigned.apk
+*.aligned.apk
+
+# Python/test cache
+__pycache__/
+*.pyc
