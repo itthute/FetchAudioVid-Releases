@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 10017,
+  "versionName": "1.0.17",
+  "minAndroidApi": 26,
+  "apkUrl": "https://github.com/itthute/FetchAudioVid-Releases/releases/download/v1.0.17/ITthuteFetchAudioVid.apk",
+  "sha256": "e8a114793a67e3a36dfdcbd2b4fdd4a4a8629cc54719f950f964235292aeab3d",
+  "releaseNotes": "Adds editable audio/video metadata from the Downloaded Media menu, with common genre selection and FFmpeg-based tag writing."
+}

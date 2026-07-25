@@ -1,0 +1,25 @@
+// v1.0.17 selected MainActivity.java menu changes
+private void showMediaItemMenu(View anchor, final String file) {
+    PopupMenu menu = new PopupMenu(this, anchor);
+    menu.getMenu().add("Open media");
+    menu.getMenu().add("Rename file");
+    menu.getMenu().add("Edit metadata");
+    menu.getMenu().add("Move file");
+    menu.getMenu().add("Delete file");
+    menu.getMenu().add("Copy file path");
+    menu.getMenu().add("Refresh in Android media library");
+    menu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+        @Override public boolean onMenuItemClick(MenuItem item) {
+            String label = String.valueOf(item.getTitle());
+            if (label.startsWith("Open")) openMediaPathWithChooser(file);
+            else if (label.startsWith("Rename")) showRenameMediaDialog(file);
+            else if (label.startsWith("Edit metadata")) readMediaMetadata(file);
+            else if (label.startsWith("Move")) showMoveMediaDialog(file);
+            else if (label.startsWith("Delete")) confirmDeleteMediaFile(file);
+            else if (label.startsWith("Copy")) copyText(file);
+            else if (label.startsWith("Refresh")) scanDownloadedMedia(file, file, true);
+            return true;
+        }
+    });
+    menu.show();
+}
