@@ -1,0 +1,33 @@
+ITTHUTE FETCH AUDIOVID 1.0.16
+==============================
+
+Install as an in-place update over 1.0.15.
+
+1. Do not uninstall ITthute Fetch AudioVid.
+2. Do not uninstall Termux.
+3. Open ITthuteFetchAudioVid-v1.0.16.apk.
+4. Choose Update.
+5. Open the app and authenticate.
+6. Run Tools -> Run full setup verification.
+
+Acceptance checks
+-----------------
+
+1. Start a download attempt.
+2. Confirm the Download tab shows Troubleshooting command.
+3. Tap Copy last yt-dlp command.
+4. Paste it into Termux to inspect or run it directly.
+5. Open Downloaded Media.
+6. On a test media item, tap the ⋮ menu.
+7. Confirm Open, Rename, Move, Delete, Copy path and Refresh are present.
+8. Test Move on a disposable file or a file you can safely move.
+9. Test Delete only on a disposable file.
+10. Share Diagnostics and confirm it still opens the Android share sheet.
+
+Notes
+-----
+
+- Move will create the destination folder if necessary.
+- Move will not overwrite an existing file with the same name.
+- Delete is permanent and requires confirmation.
+- Cookie file contents are not copied into diagnostics or release artifacts.

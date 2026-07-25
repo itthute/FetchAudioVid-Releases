@@ -13,17 +13,17 @@ za.co.itthute.fetchaudiovid
 The latest public source documentation in this repository is under:
 
 ```text
-source/v1.0.13/
-docs/v1.0.13/
+source/v1.0.16/
+docs/v1.0.16/
 ```
 
-Version 1.0.13 adds:
+Version 1.0.16 adds:
 
-- optional website-login cookie import for restricted Instagram/Facebook-style pages;
-- rejection of non-media URLs such as update feeds, JSON, ZIP, APK, PDF and Office documents;
-- Android 16 foreground-service handling for Termux RUN_COMMAND;
-- clearer yt-dlp failure messages and diagnostics;
-- regression tests for cookie validation, URL validation, duplicate handling, empty-output handling, HTTP 403 retry, MediaStore URI handling and activation rules.
+- a copyable `yt-dlp` troubleshooting command on the Download tab;
+- a **Copy last yt-dlp command** button so the exact command can be pasted into Termux;
+- **Move file** and **Delete file** actions in the Downloaded Media item menu;
+- media-index maintenance after rename, move and delete operations;
+- retained v1.0.15 domain-resolution diagnostics and diagnostic report sharing fixes.
 
 ## Live update feed
 

@@ -1,0 +1,42 @@
+ITTHUTE FETCH AUDIOVID 1.0.16 VERIFICATION
+==========================================
+
+Package: za.co.itthute.fetchaudiovid
+Version code: 10016
+Version name: 1.0.16
+APK SHA-256: 44343a3da3382d27e80ec6709454068f86ac6537885998d896a34f15f615157f
+Signer SHA-256: f1bd567df37fa936585c37c6041d152f183c32cb9ac0ddf2588256ba1460af2a
+
+Build verification
+------------------
+Java source compilation: PASS
+Fresh DEX generation: PASS
+APK archive integrity: PASS
+ZIP alignment: PASS
+Android manifest parsing: PASS
+APK Signature Scheme v2 verification: PASS
+Signer certificate match: PASS
+
+Automated tests
+---------------
+LicensePolicyTest: PASS
+ActivationScenarioTest: PASS
+MediaUrlPolicyTest: PASS
+CookieFilePolicyTest: PASS
+JavaSyntaxCheck: PASS
+source_regression_test: PASS
+
+Feature verification
+--------------------
+Copyable yt-dlp command UI: PASS
+Last yt-dlp command stored before background worker launch: PASS
+Copy button wiring: PASS
+Downloaded Media menu includes Move file: PASS
+Downloaded Media menu includes Delete file: PASS
+Move command prevents overwrite and updates media index: PASS
+Delete command requires confirmation and clears stale app references: PASS
+Diagnostics does not include cookie contents: PASS
+
+Physical device checks still required
+-------------------------------------
+Install over 1.0.15, start a download, copy the yt-dlp command, paste it in Termux, test move on disposable media, test delete on disposable media, then share diagnostics.
