@@ -1,0 +1,12 @@
+ITthute Fetch AudioVid 1.0.16 automated test log
+
+LicensePolicyTest: PASS
+ActivationScenarioTest: PASS
+MediaUrlPolicyTest: PASS
+CookieFilePolicyTest: PASS
+JavaSyntaxCheck: PASS (12 Java files)
+source_regression_test: PASS
+Clean Java compilation: PASS
+Fresh DEX generation: PASS
+APK Signature Scheme v2 verification: PASS
+Signer match with replacement release certificate: PASS
