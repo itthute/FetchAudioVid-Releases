@@ -1,0 +1,36 @@
+ITTHUTE FETCH AUDIOVID 1.0.17 VERIFICATION
+==========================================
+
+Package: za.co.itthute.fetchaudiovid
+Version code: 10017
+Version name: 1.0.17
+APK SHA-256: e8a114793a67e3a36dfdcbd2b4fdd4a4a8629cc54719f950f964235292aeab3d
+Signer SHA-256: f1bd567df37fa936585c37c6041d152f183c32cb9ac0ddf2588256ba1460af2a
+
+Automated checks:
+- Java syntax check: PASS
+- LicensePolicyTest: PASS
+- ActivationScenarioTest: PASS
+- MediaUrlPolicyTest: PASS
+- CookieFilePolicyTest: PASS
+- Source regression tests: PASS
+- Metadata edit source checks: PASS
+- Clean Java compilation: PASS
+- Fresh DEX generation: PASS
+- APK archive integrity: PASS
+- ZIP alignment: PASS
+- APK Signature Scheme v2 verification: PASS
+- Package/version manifest check: PASS
+- Replacement signer match: PASS
+- Public artifact secret scan: PASS
+
+Feature-specific checks:
+- Downloaded Media menu includes Edit metadata: PASS
+- Audio fields present: title, artist, album, album artist, genre, year/date, track, comment: PASS
+- Video fields present: title, creator/artist, genre, year/date, description/comment: PASS
+- Common genre picker present with typed custom genre support: PASS
+- FFprobe tag-read path present: PASS
+- FFmpeg stream-copy metadata write path present: PASS
+- Android media-library refresh after metadata save: PASS
+
+Physical-device validation remains the final step for FFmpeg behaviour on each media container.
