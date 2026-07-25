@@ -1,0 +1,17 @@
+// v1.0.17 selected MainActivity.java metadata command snippets
+
+// Read existing tags through FFprobe.
+String readScript = "ffprobe -v error -print_format json -show_entries format_tags \"$FILE\"";
+
+// Write updated tags through FFmpeg stream copy.
+// Audio fields use title, artist, album, album_artist, genre, date, track and comment.
+// Video fields use title, artist, genre, date, description and comment.
+String writeCommand = "ffmpeg -hide_banner -y -i \"$FILE\" -map 0 -c copy "
+        + "-metadata title=\"$TITLE\" "
+        + "-metadata artist=\"$ARTIST\" "
+        + "-metadata genre=\"$GENRE\" "
+        + "-metadata date=\"$YEAR\" "
+        + "\"$TMP\"";
+
+// The app replaces the original only after FFmpeg produces a non-empty temporary output.
+// After replacement, Android media indexing is refreshed for the updated file.
