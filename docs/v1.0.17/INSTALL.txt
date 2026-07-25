@@ -1,0 +1,24 @@
+ITTHUTE FETCH AUDIOVID 1.0.17 INSTALLATION
+==========================================
+
+Install this APK over version 1.0.16.
+
+1. Do not uninstall ITthute Fetch AudioVid.
+2. Do not uninstall Termux.
+3. Open ITthuteFetchAudioVid-v1.0.17.apk.
+4. Choose Update.
+5. Open the app and authenticate.
+6. Run Tools -> Run full setup verification.
+
+Acceptance tests:
+
+1. Confirm the Download tab still shows the copyable yt-dlp troubleshooting command after a download attempt.
+2. Open Downloaded Media.
+3. Tap a media item's ⋮ menu.
+4. Confirm the menu includes Edit metadata, Rename file, Move file and Delete file.
+5. Choose Edit metadata on an MP3 file.
+6. Confirm Title, Artist, Album, Genre, Year and Track fields appear.
+7. Tap Choose genre and select a common genre, or type a custom genre.
+8. Save metadata and confirm the file remains playable.
+9. Choose Edit metadata on an MP4 file and confirm video-appropriate fields appear.
+10. Generate diagnostics if any FFmpeg/FFprobe error appears.
