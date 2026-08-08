@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20014,
+  "versionName": "2.0.0-alpha15",
+  "minAndroidApi": 26,
+  "apkUrl": "https://github.com/itthute/FetchAudioVid-Releases/releases/download/v2.0.0-alpha15/ITthuteFetchAudioVid-v2.0.0-alpha15.apk",
+  "sha256": "943cbbae3dc6bb5049bc9f2f0dd4afb91e1c55b4bd89af786bda4167b9fdc70c",
+  "releaseNotes": "Adds Splitter output-folder browsing, lock/undo and safer slider scrolling, high-contrast dark-theme text fields, completed-download shortcuts to Media Library/Splitter/Converter, and diagnostic fixes for stale yt-dlp temporary files and Media Library requests."
+}
