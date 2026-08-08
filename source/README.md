@@ -10,7 +10,7 @@ The latest documented change set is:
 source/v2.0.0-alpha14/
 ```
 
-It contains the alpha13-to-alpha14 patch and build/source identity information. The corresponding release documentation is under:
+It contains the alpha14 source-change summary and verified build/source hashes. The corresponding release documentation is under:
 
 ```text
 docs/v2.0.0-alpha14/
