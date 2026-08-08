@@ -7,13 +7,13 @@ This folder holds public ITthute Fetch AudioVid source-change snapshots and rele
 The latest documented change set is:
 
 ```text
-source/v2.0.0-alpha16/
+source/v2.0.0-alpha17/
 ```
 
-It contains the alpha16 changed-code summary and source delta. The corresponding release documentation is under:
+It contains the alpha17 changed-code summary and verified build/source identities. The corresponding release documentation is under:
 
 ```text
-docs/v2.0.0-alpha16/
+docs/v2.0.0-alpha17/
 ```
 
 Older alpha/v1 snapshots remain available for historical reference.
