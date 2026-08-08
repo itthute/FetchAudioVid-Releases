@@ -10,30 +10,28 @@ za.co.itthute.fetchaudiovid
 
 ## Current v2 test build documentation
 
-The latest documented test build is **v2.0.0-alpha15** (`versionCode 20014`).
+The latest documented test build is **v2.0.0-alpha16** (`versionCode 20015`).
 
 Documentation and source-change notes are under:
 
 ```text
-docs/v2.0.0-alpha15/
-source/v2.0.0-alpha15/
+docs/v2.0.0-alpha16/
+source/v2.0.0-alpha16/
 ```
 
-Alpha15 adds:
+Alpha16 adds:
 
-- **Browse to target folder** from the Splitter save dialog;
-- high-contrast styling for editable text fields in dark theme;
-- per-clip **Lock / Unlock** and **Undo last slider move** controls plus safer vertical scrolling over Splitter range bars;
-- completed-download shortcuts to **Media Library**, **Splitter** and **Converter**;
-- the renamed **Playback downloaded media** action;
-- automatic repair of Splitter/Converter paths when yt-dlp replaces a temporary media file during post-processing;
-- Media Library request-generation tokens to prevent stale timeout/result races;
-- a fix for one-file Android media refreshes accidentally reusing the previous batch list.
+- **Share downloaded media** after a download and all yt-dlp post-processing have completed successfully;
+- a compact **Troubleshooting command** button instead of the large always-visible command block;
+- a troubleshooting popup with **Copy command**, **Copy & open Termux**, and **Share command** actions;
+- a manual-safety design where **Copy & open Termux** copies the exact command and opens Termux but does not execute it automatically.
+
+Alpha16 retains alpha15 Splitter output-folder browsing, high-contrast dark-theme editable fields, clip lock/undo controls, safer slider scrolling, post-download Media Library/Splitter/Converter shortcuts, yt-dlp temporary-file path repair and Media Library request-generation protection.
 
 Verified build identity:
 
 ```text
-APK SHA-256:    943cbbae3dc6bb5049bc9f2f0dd4afb91e1c55b4bd89af786bda4167b9fdc70c
+APK SHA-256:    162dd0371f39b32d45230942a169dde710fae9fca9ef6c5f10c947b013cde920
 Signer SHA-256: 9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
 ```
 
@@ -45,7 +43,7 @@ The Android app reads its production update feed from:
 https://raw.githubusercontent.com/itthute/FetchAudioVid-Releases/main/update.json
 ```
 
-Because v2.0.0-alpha15 is an alpha/test build, this repository update **does not change the live production `update.json`**. A reviewed alpha manifest is available as `update-v2.0.0-alpha15.example.json`.
+Because v2.0.0-alpha16 is an alpha/test build, this repository update **does not change the live production `update.json`**. A reviewed alpha manifest is available as `update-v2.0.0-alpha16.example.json`.
 
 Do not point the live `update.json` at a new APK until the intended release channel is confirmed, the APK release asset is available, its SHA-256 is verified, and the signer is confirmed.
 
