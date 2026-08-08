@@ -1,0 +1,15 @@
+ITTHUTE FETCH AUDIOVID 2.0.0-alpha17 INSTALL / ACCEPTANCE
+===========================================================
+
+Install alpha17 over alpha16. Do not uninstall the app first.
+
+1. Open the alpha17 APK and choose Update.
+2. Run Tools -> Run full setup verification.
+3. Splitter Undo: move a handle, release, then Undo; confirm the exact previous range returns. Scroll vertically over the slider and confirm scrolling does not replace the useful Undo point.
+4. Confirm clip Lock still prevents movement.
+5. Open Divider mode and confirm 90 seconds is selected by default; 30, 60 and custom remain available.
+6. Open Splitter settings and confirm all three numeric fields have labels/explanations.
+7. Open Diagnostics -> Send app usage report. Review the preview; confirm sensitive media/cookie/password data is absent.
+8. Confirm Send captured crash report exists; with no retained crash it should not offer a report to send.
+9. Open Help and review task guidance for each major app feature.
+10. Open About; confirm information@ITthute.Africa and https://ITthute.Africa, then test the contact actions.
