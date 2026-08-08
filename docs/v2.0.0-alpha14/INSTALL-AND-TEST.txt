@@ -1,0 +1,62 @@
+ITthute Fetch AudioVid v2.0.0-alpha14 — Install and Test
+=========================================================
+
+IMPORTANT
+---------
+This alpha14 APK is signed with the SAME 2026-v2 release key as the NEW-SIGNER
+alpha13 APK. Install it directly over alpha13. DO NOT uninstall alpha13 first.
+Doing an in-place update preserves the app's existing Android app data/preferences.
+
+PHONE INSTALL
+-------------
+1. Copy/download ITthuteFetchAudioVid-v2.0.0-alpha14.apk to the phone.
+2. Open the APK from My Files/Downloads.
+3. Android should identify it as an update to ITthute Fetch AudioVid.
+4. Approve the update/install.
+5. Open the app and confirm the header says 2.0.0-alpha14.
+
+ADB ALTERNATIVE
+---------------
+adb install -r ITthuteFetchAudioVid-v2.0.0-alpha14.apk
+
+TARGETED ALPHA14 TESTS
+----------------------
+A. Media Library -> Splitter
+   1. Open Media Library.
+   2. Tap the ⋮ menu on an audio/video file.
+   3. Tap Edit in Splitter.
+   4. Confirm Splitter opens with that same file loaded.
+   5. Create two or more ranges and save the split files.
+   6. Confirm one "Playback split N" button appears for every generated file.
+   7. Tap each button and verify each saved clip.
+
+B. Media Library -> Converter
+   1. Open Media Library.
+   2. Tap ⋮ on an audio/video file.
+   3. Tap Edit in Converter.
+   4. Confirm Converter opens with that file loaded and probes its media details.
+
+C. Diagnostics menu access
+   1. Hide Diagnostics from the visible navigation bar, if it is currently visible.
+   2. Tap the top-right app ⋮ menu.
+   3. Tap Diagnostics.
+   4. Confirm the Diagnostics screen opens.
+
+D. Facebook long filename reduction
+   1. Download a Facebook item whose restricted filename begins with a number and
+      has more than 30 alphanumeric characters.
+   2. For a name shaped like:
+      86K_views_2.4K_reactions_Ever_wonder_..._2393705764453110.mp4
+      the saved name should begin after the reactions marker and should not retain
+      the 16-digit media ID.
+   3. Confirm non-Facebook downloads and Facebook filenames that do not meet the
+      trigger conditions are left unchanged.
+
+E. General regression smoke test
+   - Run Tools -> Run full setup verification.
+   - Perform one audio download and one video download.
+   - Open Media Library, Splitter, Converter and Tools.
+
+If Android reports a signature mismatch, STOP and do not uninstall the app. Verify
+that alpha13 itself is the NEW-SIGNER alpha13 release signed with certificate
+SHA-256 9DF337ED2D87F165B60352F8C1E81AE070AD3905A6C67A0A90F766F39025C7CF.
