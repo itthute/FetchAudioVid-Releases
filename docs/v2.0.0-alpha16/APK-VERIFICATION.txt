@@ -1,0 +1,46 @@
+ITTHUTE FETCH AUDIOVID 2.0.0-alpha16 APK VERIFICATION
+=====================================================
+
+Package: za.co.itthute.fetchaudiovid
+Version code: 20015
+Version name: 2.0.0-alpha16
+Minimum Android API: 26
+Target Android API: 28
+
+SIGNED APK
+----------
+Filename: ITthuteFetchAudioVid-v2.0.0-alpha16.apk
+SHA-256: 162dd0371f39b32d45230942a169dde710fae9fca9ef6c5f10c947b013cde920
+
+SIGNATURE
+---------
+APK Signature Scheme v1: false
+APK Signature Scheme v2: true
+Number of signers: 1
+Certificate SHA-256: 9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+Key algorithm: RSA
+Key size: 4096 bits
+Signer match with alpha15: PASS
+
+SOURCE / REGRESSION TESTS
+-------------------------
+LicensePolicyTest: PASS
+ActivationScenarioTest: PASS
+MediaUrlPolicyTest: PASS
+CookieFilePolicyTest: PASS
+ClipRangeRulesTest: PASS
+JavaSyntaxCheck: PASS (16 files)
+source_regression_test: PASS
+All tests: PASS
+
+BUILD CHECKS
+------------
+GitHub Actions source reconstruction/integrity gate: PASS
+Android platform 28 / Build Tools 28.0.3 compile/package: PASS
+APK package/version badging: PASS
+APK v2 signature verification: PASS
+
+ARTIFACT HASHES
+---------------
+Source ZIP SHA-256: 68374aadd468fec76b41eb17d995ed865283633a50be9ba0e1e1db4f3188a39f
+Alpha15-to-alpha16 patch SHA-256: d30b5a002bd34ae6ef8488927111aad2ccba6b223b8a14283e3d65ecb6351b91
