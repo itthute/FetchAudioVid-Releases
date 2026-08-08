@@ -1,0 +1,70 @@
+ITthute Fetch AudioVid v2.0.0-alpha14 APK Verification
+========================================================
+
+Package identity
+----------------
+package: za.co.itthute.fetchaudiovid
+versionCode: 20013
+versionName: 2.0.0-alpha14
+compileSdkVersion: 28
+minSdkVersion: 26
+targetSdkVersion: 28
+
+Final APK SHA-256
+-----------------
+9546c93d3e8a2888cfd708022ea69aa6afdde4708a69be5f83794957874fb23c
+
+Signing identity
+----------------
+Signer SHA-256: 9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+Key algorithm: RSA
+Key size: 4096 bits
+APK Signature Scheme v2: VERIFIED
+APK Signature Scheme v1: intentionally disabled
+Number of signers: 1
+
+Upgrade compatibility
+---------------------
+The installed alpha13/new-signer release and this alpha14 APK were both verified
+with signer SHA-256:
+9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+
+alpha13 versionCode: 20012
+alpha14 versionCode: 20013
+package name unchanged: za.co.itthute.fetchaudiovid
+
+Therefore alpha14 is cryptographically/version-code compatible with an in-place
+Android update from the NEW-SIGNER alpha13 APK. Do not uninstall alpha13 first.
+
+Source/build integrity
+----------------------
+alpha14 source ZIP SHA-256: 1741cc98090e4b3b970c4495b60ad9a823d08fa03537a8b66876cc7f8bdc72b1
+alpha13->alpha14 build patch SHA-256: 37be038ff4460c6d6cd2f01bf402c8ef2c6f0ac8f482714a856d37435a360ecb
+Clean Android SDK build: PASS
+Android platform/build tools: API 28 / Build Tools 28.0.3
+
+Regression suite
+----------------
+LicensePolicyTest: PASS
+ActivationScenarioTest: PASS
+MediaUrlPolicyTest: PASS
+CookieFilePolicyTest: PASS
+ClipRangeRulesTest: PASS
+JavaSyntaxCheck: PASS (16 files)
+source_regression_test: PASS
+All tests: PASS
+
+Implemented alpha14 checks
+--------------------------
+- Media Library exposes Edit in Splitter.
+- Edit in Splitter loads the selected shared-storage file and switches tabs.
+- Media Library exposes Edit in Converter.
+- Edit in Converter loads the selected shared-storage file and switches tabs.
+- Splitter completion persists generated output paths and renders one Playback split button per output.
+- Diagnostics is present in the main/top-right menu.
+- Facebook long-filename reducer is restricted to Facebook/fb.watch downloads,
+  numeric-leading names, and >30 alphanumeric-character stems.
+- Reducer accepts both the requested literal " reactions | " marker and the
+  restricted-filename form "_reactions_" observed in actual yt-dlp output.
+- Runs of 13 or more consecutive digits are removed from reduced Facebook names.
+- Filename collisions are protected with _2, _3, ... suffixes.
