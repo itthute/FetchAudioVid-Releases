@@ -1,0 +1,14 @@
+ITthute Fetch AudioVid v2.0.0-alpha14 SHA-256
+==============================================
+
+APK
+9546c93d3e8a2888cfd708022ea69aa6afdde4708a69be5f83794957874fb23c  ITthuteFetchAudioVid-v2.0.0-alpha14.apk
+
+Source ZIP
+1741cc98090e4b3b970c4495b60ad9a823d08fa03537a8b66876cc7f8bdc72b1  ITthuteFetchAudioVid-v2.0.0-alpha14-source.zip
+
+Source patch
+37be038ff4460c6d6cd2f01bf402c8ef2c6f0ac8f482714a856d37435a360ecb  ITthuteFetchAudioVid-v2.0.0-alpha14-PATCH.diff
+
+Signer certificate SHA-256
+9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
