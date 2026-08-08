@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20015,
+  "versionName": "2.0.0-alpha16",
+  "minAndroidApi": 26,
+  "apkUrl": "https://github.com/itthute/FetchAudioVid-Releases/releases/download/v2.0.0-alpha16/ITthuteFetchAudioVid-v2.0.0-alpha16.apk",
+  "sha256": "162dd0371f39b32d45230942a169dde710fae9fca9ef6c5f10c947b013cde920",
+  "releaseNotes": "Adds post-processing-only Share downloaded media and a compact yt-dlp Troubleshooting command popup with copy, Copy & open Termux, and share actions."
+}
