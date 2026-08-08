@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20017,
+  "versionName": "2.0.0-alpha18",
+  "minAndroidApi": 26,
+  "apkUrl": "https://github.com/itthute/FetchAudioVid-Releases/releases/download/v2.0.0-alpha18/ITthuteFetchAudioVid-v2.0.0-alpha18.apk",
+  "sha256": "246c3dc02e15890648edf37e4687e108872be9fc14ed58ad063ed75d86b97994",
+  "releaseNotes": "Critical Splitter stability fix for Android 16: prevents range-view hierarchy rebuilding during slider touch dispatch and reverts invalid moves in place."
+}
