@@ -1,10 +1,10 @@
 # ITthute Fetch AudioVid v2.0.0-alpha14 source-change snapshot
 
-This folder contains the reviewed alpha13-to-alpha14 source patch for **v2.0.0-alpha14**.
+This folder documents the reviewed alpha13-to-alpha14 source changes for **v2.0.0-alpha14**.
 
-## Artifact
+## Contents
 
-- `ITthuteFetchAudioVid-v2.0.0-alpha14-PATCH.diff` — source delta from the alpha13 base used to produce alpha14.
+- `changed-code-summary.md` — implementation-oriented summary of the alpha14 code changes.
 
 ## Build identity
 
@@ -16,7 +16,7 @@ Minimum Android API: 26
 Target Android API: 28
 ```
 
-## Verified hashes
+## Verified build-artifact hashes
 
 ```text
 APK:        9546c93d3e8a2888cfd708022ea69aa6afdde4708a69be5f83794957874fb23c
