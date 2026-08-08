@@ -1,0 +1,14 @@
+ITTHUTE FETCH AUDIOVID 2.0.0-alpha15 INSTALL / TARGETED TEST
+=============================================================
+
+Install alpha15 directly over alpha14. Do not uninstall alpha14 first if application data should be retained.
+
+1. Confirm header shows 2.0.0-alpha15 and run full setup verification.
+2. Splitter: choose Save audio/video clip(s), tap Browse to target folder and select a writable primary-storage folder; confirm clips are written there.
+3. Set a clip range, lock it and confirm it cannot move; unlock, deliberately move it, tap Undo and confirm the prior range returns.
+4. Vertically swipe over the splitter range bar and confirm ordinary scrolling does not unexpectedly move a handle.
+5. In dark theme, type into metadata and other editable fields; confirm text, hints and boundaries are readable.
+6. Complete a download and test Playback downloaded media, Show downloaded media in Media Library, Edit downloaded media in Splitter, Edit downloaded media in Converter and Locate downloaded media.
+7. Rapidly switch Media Library filters/refresh and confirm an older timeout/result does not replace the latest request.
+8. Save metadata for one file and confirm the Android media refresh is limited to the requested file.
+9. Generate diagnostics if any failure remains.
