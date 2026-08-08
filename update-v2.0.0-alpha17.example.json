@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20016,
+  "versionName": "2.0.0-alpha17",
+  "minAndroidApi": 26,
+  "apkUrl": "https://github.com/itthute/FetchAudioVid-Releases/releases/download/v2.0.0-alpha17/ITthuteFetchAudioVid.apk",
+  "sha256": "07ff342cf0ea14a8f6cd6e4e09cda5fddecac63af45a85772c8a20565ee0e8cd",
+  "releaseNotes": "Improves Splitter Undo, makes 90 seconds the default divider, explains Splitter settings, adds manual usage/crash reporting, expands Help, and adds ITthute contact actions in About."
+}
