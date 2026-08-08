@@ -1,0 +1,25 @@
+ITTHUTE FETCH AUDIOVID 2.0.0-alpha16 INSTALLATION AND ACCEPTANCE TEST
+=====================================================================
+
+Package: za.co.itthute.fetchaudiovid
+Version code: 20015
+Version name: 2.0.0-alpha16
+Signer SHA-256: 9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+
+UPGRADE
+-------
+Install alpha16 directly over alpha15. Do not uninstall alpha15 first if you want to retain application data. Alpha16 uses the same package and signing identity and has a higher version code.
+
+TARGETED ACCEPTANCE TESTS
+-------------------------
+1. Start a new download and confirm Share downloaded media is not shown while download/post-processing is active.
+2. After a successful download and post-processing, confirm Share downloaded media appears.
+3. Tap Share downloaded media and confirm the Android share sheet receives the completed media file.
+4. Start another download and confirm Share downloaded media disappears until that new job completes successfully.
+5. Tap Troubleshooting command. Confirm a popup shows the exact last yt-dlp command plus job/time information.
+6. Test Copy command and confirm the full command reaches the clipboard.
+7. Test Copy & open Termux. Confirm Termux opens and the command is on the clipboard but is not auto-executed.
+8. Test Share command and confirm Android opens a text share sheet containing the command.
+9. Confirm the old large troubleshooting command block no longer permanently occupies the Download screen.
+10. Re-test alpha15 functions: Splitter output-folder browsing, clip Lock/Unlock, Undo last slider move, dark-theme field contrast, and Media Library/Splitter/Converter shortcuts.
+11. Run Tools -> Run full setup verification after updating.
