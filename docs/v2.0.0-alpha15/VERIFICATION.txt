@@ -1,0 +1,25 @@
+ITTHUTE FETCH AUDIOVID 2.0.0-alpha15 VERIFICATION
+=================================================
+
+Package: za.co.itthute.fetchaudiovid
+Version code: 20014
+Version name: 2.0.0-alpha15
+Minimum Android API: 26
+Target Android API: 28
+APK SHA-256: 943cbbae3dc6bb5049bc9f2f0dd4afb91e1c55b4bd89af786bda4167b9fdc70c
+Signer SHA-256: 9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+
+Checks:
+- LicensePolicyTest: PASS
+- ActivationScenarioTest: PASS
+- MediaUrlPolicyTest: PASS
+- CookieFilePolicyTest: PASS
+- ClipRangeRulesTest: PASS
+- JavaSyntaxCheck: PASS (16 files)
+- source_regression_test: PASS
+- Android compile/package: PASS
+- APK archive integrity: PASS
+- APK Signature Scheme v2 verification: PASS
+- Signer match with alpha14: PASS
+
+Physical-device validation remains required for final UI gesture feel and storage-provider folder mapping.
