@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20013,
+  "versionName": "2.0.0-alpha14",
+  "minAndroidApi": 26,
+  "apkUrl": "https://github.com/itthute/FetchAudioVid-Releases/releases/download/v2.0.0-alpha14/ITthuteFetchAudioVid-v2.0.0-alpha14.apk",
+  "sha256": "9546c93d3e8a2888cfd708022ea69aa6afdde4708a69be5f83794957874fb23c",
+  "releaseNotes": "Adds Media Library handoff to Splitter and Converter, post-split playback verification, Diagnostics access from the main menu, and Facebook long-filename reduction."
+}
