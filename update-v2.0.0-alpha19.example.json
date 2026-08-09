@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20018,
+  "versionName": "2.0.0-alpha19",
+  "minAndroidApi": 26,
+  "apkUrl": "https://github.com/itthute/FetchAudioVid-Releases/releases/download/v2.0.0-alpha19/ITthuteFetchAudioVid-v2.0.0-alpha19.apk",
+  "sha256": "0e503e3ad1f8eb59b02b1d71728a08ae065e02a913714ba011b87d8f579f8340",
+  "releaseNotes": "Adds targeted best-effort Termux media scanning of exact final media paths after completed media operations while retaining Android MediaScannerConnection as the primary indexer."
+}
