@@ -7,13 +7,13 @@ This folder holds public ITthute Fetch AudioVid source-change snapshots and rele
 The latest documented change set is:
 
 ```text
-source/v2.0.0-alpha18/
+source/v2.0.0-alpha19/
 ```
 
-It contains the alpha18 Splitter touch-dispatch crash-fix summary and verified build/source identities. The corresponding release documentation is under:
+It contains the alpha19 targeted media-publication summary and verified build/source identities. The corresponding release documentation is under:
 
 ```text
-docs/v2.0.0-alpha18/
+docs/v2.0.0-alpha19/
 ```
 
 Older alpha/v1 snapshots remain available for historical reference.
