@@ -1,0 +1,29 @@
+ITTHUTE FETCH AUDIOVID 2.0.0-alpha19 APK VERIFICATION
+=====================================================
+
+Package: za.co.itthute.fetchaudiovid
+Version code: 20018
+Version name: 2.0.0-alpha19
+Minimum Android API: 26
+Target Android API: 28
+
+APK SHA-256: 0e503e3ad1f8eb59b02b1d71728a08ae065e02a913714ba011b87d8f579f8340
+APK Signature Scheme v2: true
+Signer SHA-256: 9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+Key algorithm: RSA
+Key size: 4096 bits
+Signer match with alpha18: PASS
+
+Regression suite:
+LicensePolicyTest: PASS
+ActivationScenarioTest: PASS
+MediaUrlPolicyTest: PASS
+CookieFilePolicyTest: PASS
+ClipRangeRulesTest: PASS
+JavaSyntaxCheck: PASS (16 files)
+source_regression_test: PASS
+Alpha18 Splitter touch-dispatch crash guard: PASS
+Alpha19 targeted media-scan guard: PASS
+
+Source ZIP SHA-256: 2672763fb97b066c85be253ee3ceb480c51ec13d6e4a5ec389ceab29c722503e
+Alpha18-to-alpha19 patch SHA-256: 3d43b6d4733038479c732f63b85410454811e1d19e9cab8e25b8749f0eb7fa37
