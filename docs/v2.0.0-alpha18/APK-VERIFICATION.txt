@@ -24,5 +24,5 @@ JavaSyntaxCheck: PASS (16 files)
 source_regression_test: PASS
 Alpha18 touch-dispatch crash regression guard: PASS
 
-Source ZIP SHA-256: 5405c732f6655898265ecf21dd9f5c09c887c66bb6a032617c48a9f8865bc9fa
-Alpha17-to-alpha18 patch SHA-256: ef42049f50851cb6ef1a50f173c50e219b1f82766a01718b0e7bfa31150b8416
+Source ZIP SHA-256: b2748d5b9eef316c13311d8b3028293fc2ebd7102d396d8fb55cc7bfd6804470
+Alpha17-to-alpha18 patch SHA-256: db521b023844a77afda9e46ab2f2de206432c1fce0494ee4c80391b61377e564
