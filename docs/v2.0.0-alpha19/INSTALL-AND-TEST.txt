@@ -1,0 +1,13 @@
+ITTHUTE FETCH AUDIOVID v2.0.0-alpha19 — INSTALL / TEST
+
+1. Install alpha19 directly over alpha18. Do not uninstall alpha18 first.
+2. Run Tools -> Run full setup verification.
+3. Download one audio file and one video file. Confirm both appear in Android media apps.
+4. In Diagnostics, confirm a "Targeted Termux media scan status" entry is present.
+5. If Termux:API / termux-media-scan is not installed, SKIPPED_COMMAND_MISSING is expected and is not an app failure.
+6. If termux-media-scan is available, confirm the status becomes OK after a completed download.
+7. Split a file into several clips and confirm a targeted batch scan is recorded.
+8. Test conversion and metadata editing; confirm their final files remain visible in media apps.
+9. Rename/move/delete a media file and verify Android media apps no longer show stale locations.
+
+Important: alpha19 never recursively scans all shared storage after a media operation.
