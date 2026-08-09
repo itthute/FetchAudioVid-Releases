@@ -1,0 +1,3 @@
+0e503e3ad1f8eb59b02b1d71728a08ae065e02a913714ba011b87d8f579f8340  ITthuteFetchAudioVid-v2.0.0-alpha19.apk
+2672763fb97b066c85be253ee3ceb480c51ec13d6e4a5ec389ceab29c722503e  ITthuteFetchAudioVid-v2.0.0-alpha19-source.zip
+3d43b6d4733038479c732f63b85410454811e1d19e9cab8e25b8749f0eb7fa37  ITthuteFetchAudioVid-v2.0.0-alpha19-PATCH.diff
