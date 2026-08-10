@@ -1,0 +1,28 @@
+ITthute Fetch AudioVid alpha20 Picture Failure Analysis / alpha21 Remediation
+===============================================================================
+
+Observed during alpha20 testing:
+- Normal video downloads completed successfully.
+- Facebook and Instagram picture jobs completed with zero picture files.
+- A supplied Facebook example used a redirect-style /share/p/... URL.
+- Website cookies were not configured/enabled in the captured tests.
+- gallery-dl was installed successfully as 1.32.9, although Diagnostics displayed "unknown".
+
+Application defects found:
+1. Alpha20 picture workers wrote extractor output to pictures-<job>.log, but the shared progress poller still tailed download-<job>.log. This hid the useful extractor error and caused an empty TMD_LOG_TAIL.
+2. Facebook share links were passed directly to gallery extraction rather than first being canonicalised to a post/photo/permalink URL.
+3. Authentication-required social-media responses were not distinguished clearly from ordinary zero-image results.
+4. gallery-dl version detection was not persisted into the preference read by Diagnostics.
+5. The LinkedIn best-effort extractor did not explicitly detect login/authwall/checkpoint responses.
+
+Alpha21 remediation:
+- Follow LOG= from the job status and expose the true picture extractor log tail.
+- Canonicalise Facebook share/redirect URLs before extraction.
+- Reuse imported Netscape cookies in Facebook resolution/extraction when enabled.
+- Add platform-specific authentication, access, rate-limit, unsupported-URL and zero-image guidance.
+- Detect LinkedIn login/authwall/checkpoint responses.
+- Persist gallery-dl version information after dependency verification.
+
+The optional exact-path termux-media-scan timeout seen elsewhere in the supplied Diagnostics is not the root cause of the picture extraction failure: picture jobs produced no files, while Android's primary MediaScannerConnection continued to complete successfully for normal video jobs.
+
+External providers can change authentication/page behavior independently of the app, so fresh browser cookies may still be required for old/restricted posts. Alpha21 makes such failures visible in the job log for precise follow-up remediation.
