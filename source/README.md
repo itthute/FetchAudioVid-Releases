@@ -7,17 +7,19 @@ This folder holds public ITthute Fetch AudioVid source-change snapshots and rele
 The latest documented change set is:
 
 ```text
-source/v2.0.0-alpha19/
+source/v2.0.0-alpha20/
 ```
 
-It contains the alpha19 targeted media-publication summary and verified build/source identities. The corresponding release documentation is under:
+It documents the alpha20 Pictures/post-image implementation for Facebook, Instagram and LinkedIn, ordered post sub-folders, retry behavior, optional post metadata, gallery-dl integration, LinkedIn best-effort extraction, and the retained alpha19/alpha18 media-publication and Splitter safety behavior.
+
+The corresponding release documentation is under:
 
 ```text
-docs/v2.0.0-alpha19/
+docs/v2.0.0-alpha20/
 ```
 
 Older alpha/v1 snapshots remain available for historical reference.
 
 ## Security
 
-Do not commit private signing keys, signing passwords, private signing backup ZIP files, browser cookies, private diagnostics, screenshots containing private data, or user media.
+Do not commit private signing keys, signing passwords, private signing backup ZIP files, browser/social-media cookies, private diagnostics, screenshots containing private data, or user media.
