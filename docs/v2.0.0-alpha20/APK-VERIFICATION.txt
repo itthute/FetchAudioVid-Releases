@@ -1,0 +1,67 @@
+ITthute Fetch AudioVid v2.0.0-alpha20 - APK VERIFICATION
+=========================================================
+
+Package:      za.co.itthute.fetchaudiovid
+Version code: 20019
+Version name: 2.0.0-alpha20
+Compile SDK:  28
+Minimum SDK:  26
+Target SDK:   28
+
+SIGNED APK
+----------
+SHA-256: 85c4823eaef7ca98cad2d44a49ccaad9decad6f1944d6cbafe6225cb9d7d8693
+
+apksigner:
+Verifies: YES
+v1 signing: false
+v2 signing: true
+Number of signers: 1
+
+Signer DN:
+CN=ITthute Fetch AudioVid Release, OU=Software Signing, O=ITthute (Pty) Ltd, L=Germiston, ST=Gauteng, C=ZA
+
+Signer certificate SHA-256:
+9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+
+Key algorithm: RSA
+Key size: 4096 bits
+Public key SHA-256:
+d96c042da2d8d53521a60d0de583aaa80c082596ad3fc44f51c31fa8f8795ce7
+
+Signer matches retained 2026-v2 signer: PASS
+Same package/signer identity as alpha19: PASS
+versionCode 20019 > 20018: PASS
+
+UNSIGNED PRACTICE APK
+---------------------
+A deliberately unsigned practice APK was produced separately for private signing practice and is not committed to this public repository.
+
+Unsigned APK SHA-256:
+103f129dbf56465a21f3ddc946d5edc96dfc5be4e39d75a3087ef9eb28715893
+
+Before signing, apksigner correctly rejects it:
+DOES NOT VERIFY
+ERROR: Missing META-INF/MANIFEST.MF
+
+TESTS
+-----
+LicensePolicyTest: PASS
+ActivationScenarioTest: PASS
+MediaUrlPolicyTest: PASS
+CookieFilePolicyTest: PASS
+ClipRangeRulesTest: PASS
+PostPictureSupportTest: PASS
+JavaSyntaxCheck: PASS (18 files)
+source_regression_test: PASS
+All tests: PASS
+
+Private clean Android API 28 / Build Tools 28.0.3 build: PASS
+
+SOURCE / PATCH IDENTITIES
+-------------------------
+Source ZIP SHA-256:
+1396308558f1af38355cde396d3bfd7ec16930a08a18cf863aee74a6dfa661d7
+
+Alpha19 -> alpha20 source patch SHA-256:
+577e3f4c90b7e752dd400e29d0694fd9498ef0a762d167e931213a466a7055ae
