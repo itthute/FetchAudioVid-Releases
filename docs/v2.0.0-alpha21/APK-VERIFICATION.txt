@@ -1,0 +1,58 @@
+ITthute Fetch AudioVid v2.0.0-alpha21 - APK VERIFICATION
+=========================================================
+
+Package:      za.co.itthute.fetchaudiovid
+Version code: 20020
+Version name: 2.0.0-alpha21
+Compile SDK:  28
+Minimum SDK:  26
+Target SDK:   28
+
+SIGNED APK
+----------
+SHA-256: 01a145f15e1435dbe90aec989cc223069533d7ce266703b478fdd9acd18e32fa
+
+apksigner:
+Verifies: YES
+v1 signing: false
+v2 signing: true
+Number of signers: 1
+
+Signer DN:
+CN=ITthute Fetch AudioVid Release, OU=Software Signing, O=ITthute (Pty) Ltd, L=Germiston, ST=Gauteng, C=ZA
+
+Signer certificate SHA-256:
+9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+
+Key algorithm: RSA
+Key size: 4096 bits
+Public key SHA-256:
+d96c042da2d8d53521a60d0de583aaa80c082596ad3fc44f51c31fa8f8795ce7
+
+Signer matches retained 2026-v2 signer: PASS
+Same package/signer identity as alpha20: PASS
+versionCode 20020 > 20019: PASS
+
+UNSIGNED PRACTICE APK
+---------------------
+SHA-256: 164922ec6245c977c252466cd70468b41279a0968647c9516724fe6aa27d25e6
+
+Before signing, apksigner rejects it as expected:
+DOES NOT VERIFY
+ERROR: Missing META-INF/MANIFEST.MF
+
+BUILD / TESTS
+-------------
+Local regression suite: ALL PASS
+JavaSyntaxCheck: PASS (18 files)
+Clean Android API 28 / Build Tools 28.0.3 build: PASS
+GitHub Actions run: 31347997809
+Job: 93333442013
+
+SOURCE / PATCH IDENTITIES
+-------------------------
+Source ZIP SHA-256:
+c286839b5b13ff3e56602bef4fd6279716176ee45111b2629df42dab2fc07919
+
+Alpha20 -> alpha21 source patch SHA-256:
+0dc7b8de4f8e4cef2bdc7eec0a94ec1702da26cf900ab6494a5f21e03eafd0c0
