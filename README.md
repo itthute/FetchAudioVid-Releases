@@ -10,34 +10,36 @@ za.co.itthute.fetchaudiovid
 
 ## Current v2 test build documentation
 
-The latest documented test build is **v2.0.0-alpha19** (`versionCode 20018`).
+The latest documented test build is **v2.0.0-alpha20** (`versionCode 20019`).
 
 Documentation and source-change notes are under:
 
 ```text
-docs/v2.0.0-alpha19/
-source/v2.0.0-alpha19/
+docs/v2.0.0-alpha20/
+source/v2.0.0-alpha20/
 ```
 
-Alpha19 adds a targeted, best-effort secondary media-publication step through Termux after completed media operations:
+Alpha20 adds a dedicated **Pictures (post/carousel images)** mode for Facebook, Instagram and LinkedIn posts:
 
-- Android `MediaScannerConnection` remains the primary indexing mechanism;
-- the optional secondary step calls `termux-media-scan` with the **exact final media path(s)** only;
-- completed downloads, conversions and metadata edits trigger the secondary scan after the Android scan completes;
-- Splitter outputs are scanned together as one exact-path batch;
-- rename/move refreshes old and new paths, while delete refreshes the removed path to help clear stale MediaStore entries;
-- no recursive scan of `/storage/emulated/0`, `~/storage/shared`, or an entire destination tree is performed;
-- missing Termux:API, a missing `termux-media-scan` command, timeouts or scan failures are diagnostic information only and never turn a successful media operation into an application failure;
-- Diagnostics records the latest targeted Termux media-scan status, reason, file count, return code and time.
+- each picture job creates a post-specific sub-folder inside the user-selected target directory;
+- images use zero-padded ordered names such as `001.jpg`, `002.jpg`, `003.jpg` so filename sorting preserves post/carousel order;
+- completed numbered files are retained on retry rather than being overwritten unnecessarily;
+- optional `post-info.txt` records post provenance and download details;
+- Facebook and Instagram use `gallery-dl` with the app's existing cookie support when authentication is needed;
+- LinkedIn uses a built-in best-effort Python image extractor because provider markup can change independently of the app;
+- completed pictures are published with Android `MediaScannerConnection` plus alpha19's exact-path, best-effort `termux-media-scan` secondary pass;
+- Diagnostics, dependency setup/repair and troubleshooting now understand `gallery-dl` and picture jobs.
 
-Alpha19 retains alpha18's Android 16 Splitter touch-dispatch crash fix and all earlier Download, Media Library, Splitter, Converter, reporting, Help and Contact Us improvements.
+Alpha20 retains alpha19's targeted media-publication design and alpha18's Android 16 Splitter touch-dispatch crash fix, including the invariant that Splitter range views are not rebuilt during active slider touch dispatch.
 
-Verified build identity:
+Verified signed build identity:
 
 ```text
-APK SHA-256:    0e503e3ad1f8eb59b02b1d71728a08ae065e02a913714ba011b87d8f579f8340
+APK SHA-256:    85c4823eaef7ca98cad2d44a49ccaad9decad6f1944d6cbafe6225cb9d7d8693
 Signer SHA-256: 9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
 ```
+
+The alpha20 release work also produced a deliberately unsigned practice APK for private signing practice; the unsigned binary is not committed to this public repository.
 
 ## Live update feed
 
@@ -47,9 +49,9 @@ The Android app reads its production update feed from:
 https://raw.githubusercontent.com/itthute/FetchAudioVid-Releases/main/update.json
 ```
 
-Because v2.0.0-alpha19 is an alpha/test build, this repository update **does not change the live production `update.json`**. A reviewed alpha manifest is available as `update-v2.0.0-alpha19.example.json`.
+Because v2.0.0-alpha20 is an alpha/test build, this repository update **does not change the live production `update.json`**. A reviewed alpha manifest template is available as `update-v2.0.0-alpha20.example.json`.
 
-Do not point the live `update.json` at a new APK until the intended release channel is confirmed, the APK release asset is available, its SHA-256 is verified, and the signer is confirmed.
+Do not point the live `update.json` at a new APK until the intended release channel is confirmed, the APK release asset is actually available, its SHA-256 is verified, and the signer is confirmed.
 
 ## Security rules
 
@@ -59,8 +61,8 @@ Never commit:
 - private signing bundles;
 - signing passwords;
 - administrator plaintext credential files;
-- Facebook/Instagram/browser cookies;
+- Facebook/Instagram/LinkedIn/browser cookies;
 - private diagnostic reports containing device/user paths or active session details;
 - user media files.
 
-The public source package embeds only administrator password hashes, not plaintext administrator passwords.
+The public source documentation never contains the private signing password.
