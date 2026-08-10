@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20019,
+  "versionName": "2.0.0-alpha20",
+  "minAndroidApi": 26,
+  "apkUrl": "REPLACE_WITH_ACTUAL_RELEASE_ASSET_URL_IF_ALPHA20_IS_PROMOTED",
+  "sha256": "85c4823eaef7ca98cad2d44a49ccaad9decad6f1944d6cbafe6225cb9d7d8693",
+  "releaseNotes": "Adds Pictures mode for ordered Facebook, Instagram and LinkedIn post images with post sub-folders, retry-safe numbering, optional post-info.txt and targeted media publication."
+}
