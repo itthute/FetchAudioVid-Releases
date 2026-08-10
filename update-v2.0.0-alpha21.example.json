@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20020,
+  "versionName": "2.0.0-alpha21",
+  "minAndroidApi": 26,
+  "apkUrl": "REPLACE_WITH_ACTUAL_RELEASE_ASSET_URL_IF_ALPHA21_IS_PROMOTED",
+  "sha256": "01a145f15e1435dbe90aec989cc223069533d7ce266703b478fdd9acd18e32fa",
+  "releaseNotes": "Remediates Picture mode failures with real picture-log diagnostics, Facebook share-link canonicalisation, clearer cookie/auth guidance, LinkedIn authwall detection and gallery-dl version persistence."
+}
