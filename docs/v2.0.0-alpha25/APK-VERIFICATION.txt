@@ -1,0 +1,40 @@
+ITthute Fetch AudioVid v2.0.0-alpha25 - APK VERIFICATION
+
+Package: za.co.itthute.fetchaudiovid
+Version code: 20024
+Version name: 2.0.0-alpha25
+Compile SDK: 28
+Minimum SDK: 26
+Target SDK: 28
+
+Signed APK SHA-256:
+b933458e95f42d7d345410a7804a58a89f68bd2b9dcc189df9e72df851a0239c
+
+Unsigned practice APK SHA-256:
+8da0ee291264e3337d46e4b1fa1b1242d5d122107e3b085749a838d74581be1d
+
+Signer certificate SHA-256:
+9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+
+Verification:
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Number of signers: 1
+Signer DN: CN=ITthute Fetch AudioVid Release, OU=Software Signing, O=ITthute (Pty) Ltd, L=Germiston, ST=Gauteng, C=ZA
+Signer key algorithm: RSA
+Signer key size: 4096 bits
+Signer matches retained 2026-v2 certificate: PASS
+Signer matches alpha24: PASS
+
+Source ZIP SHA-256:
+e68107f9e81334a1599bca4d5a8f9db7ebee03446e7ff28ebe6a99517bfc6a02
+
+Alpha24 -> alpha25 full patch SHA-256:
+5f6c055b178f18d5a5f708b301c8e1b027639e27f741fbf88c8b7d18bdca6fc0
+
+Clean build workflow run 31457484145: PASS
+Regression suite: PASS
+LinkedInFallbackBehaviorTest: PASS
+
+The deliberately unsigned practice APK is not committed to this public repository. No binary GitHub Release asset is claimed here.
