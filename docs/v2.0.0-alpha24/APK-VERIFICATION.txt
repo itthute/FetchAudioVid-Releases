@@ -1,0 +1,65 @@
+ITthute Fetch AudioVid v2.0.0-alpha24 - APK VERIFICATION
+==========================================================
+
+Package:      za.co.itthute.fetchaudiovid
+Version name: 2.0.0-alpha24
+Version code: 20023
+Compile SDK:  28
+Minimum SDK:  26
+Target SDK:   28
+
+SIGNED APK
+----------
+File: ITthuteFetchAudioVid-v2.0.0-alpha24.apk
+SHA-256: 961da46109e216e142577a3b60035ab8e41c17096e753ba6e3e0c8bf7548a092
+Signature verification: PASS
+APK Signature Scheme v1: false
+APK Signature Scheme v2: true
+Number of signers: 1
+Signer certificate SHA-256:
+9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+RSA key size: 4096 bits
+Signer matches alpha23: PASS
+
+UNSIGNED PRACTICE APK
+---------------------
+File: ITthuteFetchAudioVid-v2.0.0-alpha24-unsigned.apk
+SHA-256: 1f175bdc95f6decc962f096241836f1f527665a11a1a0a5f34948b3173fda1cf
+Expected pre-signing verification: DOES NOT VERIFY
+The unsigned binary is retained privately for signing practice and is not committed here.
+
+SOURCE IDENTITY
+---------------
+Source ZIP SHA-256:
+76ffd5dbe4044b4b966fdd8ee46e0ecf436158cb68bbffa78a24d9ea8284567a
+
+Alpha23 -> alpha24 full source patch SHA-256:
+914db7eeb0a66d7a163134432d4068c572c4f8e0a9f1ab56baf8680e039776cf
+
+BUILD VALIDATION
+----------------
+Clean GitHub Actions build: PASS
+Android platform / compile SDK: 28
+Android Build Tools: 28.0.3
+Legacy Java 8 compile/package: PASS
+
+Regression suite:
+- LicensePolicyTest: PASS
+- ActivationScenarioTest: PASS
+- MediaUrlPolicyTest: PASS
+- CookieFilePolicyTest: PASS
+- ClipRangeRulesTest: PASS
+- PostPictureSupportTest: PASS
+- PicturePdfSupportTest: PASS
+- LinkedInVideoSupportTest: PASS
+- JavaSyntaxCheck: PASS (22 files)
+- source_regression_test: PASS
+- All tests: PASS
+
+LinkedIn fallback synthetic test: PASS
+
+SECURITY
+--------
+No release keystore, private signing password, signing recovery bundle, browser/social-media
+cookies, temporary signed LinkedIn CDN media URLs, user media or private diagnostic report is
+contained in this public verification record.
