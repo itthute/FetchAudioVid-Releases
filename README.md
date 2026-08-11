@@ -10,39 +10,38 @@ za.co.itthute.fetchaudiovid
 
 ## Current v2 test build documentation
 
-The latest documented test build is **v2.0.0-alpha22** (`versionCode 20021`).
+The latest documented test build is **v2.0.0-alpha23** (`versionCode 20022`).
 
 Documentation and source-change notes are under:
 
 ```text
-docs/v2.0.0-alpha22/
-source/v2.0.0-alpha22/
+docs/v2.0.0-alpha23/
+source/v2.0.0-alpha23/
 ```
 
-Alpha22 is a focused reliability update for Facebook and LinkedIn Picture/Post Images after alpha21 field diagnostics identified three application-side problems:
+Alpha23 follows successful Facebook, Instagram and LinkedIn picture-post field testing and focuses on picture-oriented workflow improvements:
 
-- imported website cookies were retained in one global `cookies.txt`, so importing another platform replaced the previous platform's session;
-- Facebook `/share/...` URLs could remain unresolved after an HTTP 400 response and were then rejected by gallery-dl as unsupported;
-- LinkedIn `lnkd.in` short links were rejected by Picture-mode URL classification before the LinkedIn extractor could run.
-
-Alpha22 therefore:
-
-- retains independent Facebook, Instagram and LinkedIn Netscape cookie profiles with owner-only permissions;
-- automatically selects the matching platform profile while retaining the legacy generic cookie file only as a migration fallback;
-- adds a second Facebook share-link resolution path using yt-dlp redirect discovery when the HTTP resolver cannot canonicalise the URL;
-- accepts `lnkd.in` as LinkedIn Picture-mode input and lets the built-in LinkedIn extractor follow the redirect;
-- expands Diagnostics with per-platform cookie-profile state and selected-profile information without exposing cookie values;
-- preserves alpha20/21 ordered picture sub-folders, zero-padded numbering, optional `post-info.txt`, retry behavior and Instagram extraction;
-- preserves alpha19 targeted media publication and alpha18's Android 16 Splitter touch-dispatch safety invariant.
+- after a picture-post download, the primary completion action is **Open downloaded picture folder** so a multi-picture post can be viewed as a set;
+- audio/video-specific completion controls such as Media Library handoff, Splitter, Converter, Locate and single-file Share are hidden for picture jobs and restored for later audio/video jobs;
+- adds a **Create PDF from picture folder** utility in Tools;
+- uses Android's Storage Access Framework to select the source folder and create the PDF in that same folder;
+- sorts source pictures in natural filename-number order (`1`, `2`, `10`; zero-padded `001`, `002`, `010` also works);
+- places one picture per PDF page, automatically choosing portrait or landscape orientation and preserving image aspect ratio without cropping;
+- skips undecodable images without aborting an otherwise valid PDF job and reports the result;
+- preserves alpha22 independent Facebook/Instagram/LinkedIn cookie profiles, Facebook share-link fallback resolution and LinkedIn `lnkd.in` support;
+- preserves alpha18's Android 16 Splitter touch-dispatch safety invariant.
 
 Verified signed build identity:
 
 ```text
-APK SHA-256:    910c7401640543b5dac2f827a48fbace7993c702dce006bc7ee3bf5b11a4e349
-Signer SHA-256: 9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+APK SHA-256:      2365bfeb9d11394d1cc5a94f56e4849c5d9474cec965efad349435308840e8ce
+Unsigned SHA-256: f20157664f5e6ce27471b5e1e0ddafd0e99e5ede385fa5fb2ced53e20bedc04f
+Signer SHA-256:   9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+Source ZIP SHA-256: 7d7909ca25457b6b23896562baa18bc2e6116c5887b83c8bbf37522ba26e1369
+Alpha22→23 patch:  6e8fb622450637d83640453b030d2aefb0b66423e557c0a2c980d5fb8f8c30db
 ```
 
-A deliberately unsigned alpha22 practice APK was also produced privately for signing practice; the unsigned binary is not committed to this public repository.
+A deliberately unsigned alpha23 practice APK was also produced privately for the documented signing-practice workflow; the unsigned binary is not committed to this public repository.
 
 ## Live update feed
 
@@ -52,7 +51,7 @@ The Android app reads its production update feed from:
 https://raw.githubusercontent.com/itthute/FetchAudioVid-Releases/main/update.json
 ```
 
-Because v2.0.0-alpha22 is an alpha/test build, this repository update **does not change the live production `update.json`**. A reviewed alpha manifest template is available as `update-v2.0.0-alpha22.example.json`.
+Because v2.0.0-alpha23 is an alpha/test build, this repository update **does not change the live production `update.json`**. A reviewed alpha manifest template is available as `update-v2.0.0-alpha23.example.json`.
 
 Do not point the live `update.json` at a new APK until the intended release channel is confirmed, the APK release asset is actually available, its SHA-256 is verified, and the signer is confirmed.
 
