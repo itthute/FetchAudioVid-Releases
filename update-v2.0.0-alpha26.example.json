@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20025,
+  "versionName": "2.0.0-alpha26",
+  "minAndroidApi": 26,
+  "apkUrl": "REPLACE_WITH_REVIEWED_ALPHA26_APK_URL_BEFORE_USE",
+  "sha256": "013dee89d0787f20f7a812e0f50f657842b87682741f23b7d2264e0e09955212",
+  "releaseNotes": "Adds privacy-safe cookie profile insights and safer Pictures-to-PDF target/cleanup controls with parent-folder default and source-tree deletion protection."
+}
