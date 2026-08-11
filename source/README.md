@@ -7,19 +7,19 @@ This folder holds public ITthute Fetch AudioVid source-change snapshots and rele
 The latest documented change set is:
 
 ```text
-source/v2.0.0-alpha24/
+source/v2.0.0-alpha25/
 ```
 
-It documents alpha24's LinkedIn Video resilience path and expanded Help/user guide. LinkedIn Video jobs continue to use normal yt-dlp first; when yt-dlp returns a recognized extraction-layout failure without a media file, a local authenticated-page fallback can inspect classic video markup and newer LinkedIn code-block JSON for progressive MP4/HLS/DASH media before handing the selected stream back to yt-dlp. Temporary CDN links are kept private and removed after the attempt.
+Alpha25 documents the correction to alpha24's LinkedIn Video fallback authentication classifier. The fallback now scans classic video markup and LinkedIn JSON media metadata in `<code>` and `<script>` blocks before deciding that authentication failed. Incidental authwall/login wording in otherwise usable LinkedIn HTML is ignored; strong login/authwall/checkpoint redirects or real login forms remain recognized when no video metadata is available.
 
-Alpha24 also turns **Help / complete user guide** into an 18-section task-oriented manual covering setup, all download modes, cookies, picture-post/PDF workflows, Media Library, Splitter, Converter, metadata, maintenance, updates/rollback, diagnostics, troubleshooting, issue/crash reporting, security/privacy and activation.
+The same retained LinkedIn Netscape cookie profile and browser-like LinkedIn request context are used by the fallback. Temporary signed CDN media URLs remain private and are removed after the attempt.
 
-Alpha23's picture-aware post-download controls and Pictures-to-PDF workflow, alpha22's independent social cookie profiles, and alpha18's Splitter touch-safety invariant remain preserved.
+Alpha24's expanded Help/user guide, alpha23's picture-aware post-download controls and Pictures-to-PDF workflow, alpha22's independent social cookie profiles, and alpha18's Splitter touch-safety invariant remain preserved.
 
 The corresponding release documentation is under:
 
 ```text
-docs/v2.0.0-alpha24/
+docs/v2.0.0-alpha25/
 ```
 
 Older alpha/v1 snapshots remain available for historical reference.
