@@ -1,0 +1,9 @@
+ALPHA25 LINKEDIN VIDEO DIAGNOSTICS ANALYSIS
+
+Alpha24 field diagnostics established that the LinkedIn cookie profile was configured and enabled, and the same retained profile successfully fetched a LinkedIn picture post with HTTP 200. However, multiple LinkedIn Video jobs followed the same pattern: yt-dlp reported Unable to extract video, the built-in fallback started, and the fallback immediately emitted LINKEDIN_AUTH_REQUIRED=1.
+
+Root cause: alpha24 used an over-broad authentication heuristic before media discovery. The mere presence of text such as authwall or sign in to LinkedIn anywhere in returned HTML could trigger authentication-required even when those words came from normal LinkedIn scripts/navigation.
+
+Alpha25 scans video candidates first, adds browser-like LinkedIn request context, and only classifies authentication failure from strong final-URL/login-form evidence when no media candidate was found. It also scans both code and script JSON blocks in addition to classic video markup.
+
+A behavioral regression test confirms that misleading auth-related wording does not suppress valid progressiveStreams metadata, while a genuine login form is still classified as authentication-required.
