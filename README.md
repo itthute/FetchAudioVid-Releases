@@ -10,42 +10,40 @@ za.co.itthute.fetchaudiovid
 
 ## Current v2 test build documentation
 
-The latest documented test build is **v2.0.0-alpha24** (`versionCode 20023`).
+The latest documented test build is **v2.0.0-alpha25** (`versionCode 20024`).
 
 Documentation and source-change notes are under:
 
 ```text
-docs/v2.0.0-alpha24/
-source/v2.0.0-alpha24/
+docs/v2.0.0-alpha25/
+source/v2.0.0-alpha25/
 ```
 
-Alpha24 extends the normal Video downloader for LinkedIn videos the user owns or is authorised to save, while keeping the installed `yt-dlp` extractor as the first choice:
+Alpha25 is a field-test correction to alpha24's LinkedIn Video fallback. Alpha24 diagnostics showed that the retained LinkedIn cookie profile was valid and could fetch LinkedIn picture posts with HTTP 200, while LinkedIn Video fallback jobs still stopped with `LINKEDIN_AUTH_REQUIRED=1`. The root cause was an over-broad fallback heuristic that treated incidental words such as `authwall` or `sign in to LinkedIn` anywhere in otherwise usable LinkedIn HTML as proof of authentication failure.
 
-- ordinary LinkedIn and `lnkd.in` Video jobs run the normal yt-dlp LinkedIn extractor first;
-- if yt-dlp produces no media and reports a recognized LinkedIn extraction-layout failure, the app automatically invokes a local fallback;
-- the fallback understands classic `<video data-sources>` markup plus newer LinkedIn JSON media metadata stored in `<code>` elements;
-- it can locate progressive MP4, HLS and DASH candidates and then hands the chosen stream back to yt-dlp for the existing download/post-processing pipeline;
-- retained LinkedIn Netscape cookies are used when the target post requires the user's authenticated browser session; the fallback does not bypass login or access controls;
-- temporary signed LinkedIn CDN URLs stay in owner-only Termux job files, are filtered from normal diagnostics and are deleted after the fallback attempt;
-- duplicate prevention, optional H.264/AAC phone-editor compatibility, media indexing, playback/share, Media Library, Splitter and Converter handoffs are retained;
-- **Help / complete user guide** is now an 18-section task-oriented manual covering setup, every download mode, LinkedIn video, cookies, Pictures-to-PDF, Media Library, Splitter, Converter, metadata editing, maintenance, updates/rollback, diagnostics, troubleshooting, issue/crash reporting, security/privacy and activation;
-- Help adds **Copy guide** and **Share diagnostics** actions;
-- alpha23's picture-aware post-download controls and Pictures-to-PDF utility remain intact;
-- alpha18's Android 16 Splitter touch-dispatch safety invariant remains protected by regression tests.
+Alpha25 changes that flow so that:
 
-Verified signed build identity:
+- normal installed `yt-dlp` remains the first LinkedIn Video attempt;
+- the fallback uses the retained LinkedIn cookie profile and a browser-like LinkedIn request context;
+- classic video markup and JSON metadata in both `<code>` and `<script>` elements are scanned for progressive MP4, HLS and DASH candidates **before** authentication is classified;
+- incidental auth/login wording in LinkedIn scripts/navigation no longer causes a false authentication failure;
+- authentication-required is reserved for strong evidence such as an actual LinkedIn login/authwall/checkpoint redirect or a real login form when no media candidate was found;
+- temporary signed LinkedIn CDN URLs remain private, filtered from normal diagnostics and deleted after use;
+- alpha24's expanded Help guide, alpha23 Pictures-to-PDF/picture-aware actions, alpha22 independent social-cookie profiles and alpha18 Android 16 Splitter touch-safety invariant remain preserved.
+
+Verified build identity:
 
 ```text
-APK SHA-256:        961da46109e216e142577a3b60035ab8e41c17096e753ba6e3e0c8bf7548a092
-Unsigned SHA-256:   1f175bdc95f6decc962f096241836f1f527665a11a1a0a5f34948b3173fda1cf
+APK SHA-256:        b933458e95f42d7d345410a7804a58a89f68bd2b9dcc189df9e72df851a0239c
+Unsigned SHA-256:   8da0ee291264e3337d46e4b1fa1b1242d5d122107e3b085749a838d74581be1d
 Signer SHA-256:     9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
-Source ZIP SHA-256: 76ffd5dbe4044b4b966fdd8ee46e0ecf436158cb68bbffa78a24d9ea8284567a
-Alpha23→24 patch:   914db7eeb0a66d7a163134432d4068c572c4f8e0a9f1ab56baf8680e039776cf
+Source ZIP SHA-256: e68107f9e81334a1599bca4d5a8f9db7ebee03446e7ff28ebe6a99517bfc6a02
+Alpha24→25 patch:   5f6c055b178f18d5a5f708b301c8e1b027639e27f741fbf88c8b7d18bdca6fc0
 ```
 
-The clean Android API 28 / Build Tools 28.0.3 build and the expanded regression suite pass, including `LinkedInVideoSupportTest`, Pictures-to-PDF/social-picture checks, cookie/URL/activation/Splitter checks, Java syntax validation and source regression guards.
+The clean Android API 28 / Build Tools 28.0.3 build passes. The regression suite also passes, including `LinkedInVideoSupportTest`, the new `LinkedInFallbackBehaviorTest`, Pictures-to-PDF/social-picture checks, cookie/URL/activation/Splitter checks, Java syntax validation across 22 files and source regression guards.
 
-A deliberately unsigned alpha24 practice APK was also produced privately for the documented signing-practice workflow; the unsigned binary is not committed to this public repository. No alpha24 binary GitHub Release asset is claimed by this documentation update.
+A deliberately unsigned alpha25 practice APK was produced privately for the documented signing-practice workflow; the unsigned binary is not committed to this public repository. No alpha25 binary GitHub Release asset is claimed by this documentation update.
 
 ## Live update feed
 
@@ -55,7 +53,7 @@ The Android app reads its production update feed from:
 https://raw.githubusercontent.com/itthute/FetchAudioVid-Releases/main/update.json
 ```
 
-Because v2.0.0-alpha24 is an alpha/test build, this repository update **does not change the live production `update.json`**. A reviewed alpha manifest template is available as `update-v2.0.0-alpha24.example.json`.
+Because v2.0.0-alpha25 is an alpha/test build, this repository update **does not change the live production `update.json`**. A reviewed alpha manifest template is available as `update-v2.0.0-alpha25.example.json`.
 
 Do not point the live `update.json` at a new APK until the intended release channel is confirmed, the APK release asset is actually available, its SHA-256 is verified, and the signer is confirmed.
 
