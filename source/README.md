@@ -7,15 +7,15 @@ This folder holds public ITthute Fetch AudioVid source-change snapshots and rele
 The latest documented change set is:
 
 ```text
-source/v2.0.0-alpha21/
+source/v2.0.0-alpha22/
 ```
 
-It documents the alpha21 picture-download remediation: true picture-job log polling, Facebook share-link canonicalisation, platform-specific authentication/error reporting, LinkedIn authwall detection, gallery-dl version persistence, and preservation of the alpha20 ordered picture-folder behavior.
+It documents the alpha22 social-picture reliability fixes: separate retained Facebook/Instagram/LinkedIn cookie profiles, automatic platform-specific cookie selection, Facebook `/share/...` yt-dlp redirect-resolution fallback, `lnkd.in` LinkedIn short-link support, and expanded diagnostics. The alpha20/21 ordered picture-folder behavior, alpha19 exact-path media publication and alpha18 Splitter touch-safety invariant remain preserved.
 
 The corresponding release documentation is under:
 
 ```text
-docs/v2.0.0-alpha21/
+docs/v2.0.0-alpha22/
 ```
 
 Older alpha/v1 snapshots remain available for historical reference.
