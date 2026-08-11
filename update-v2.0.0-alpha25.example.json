@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20024,
+  "versionName": "2.0.0-alpha25",
+  "minAndroidApi": 26,
+  "apkUrl": "REPLACE_WITH_REVIEWED_ALPHA25_APK_URL_BEFORE_USE",
+  "sha256": "b933458e95f42d7d345410a7804a58a89f68bd2b9dcc189df9e72df851a0239c",
+  "releaseNotes": "Fixes false LinkedIn Video authentication detection by scanning media metadata before classifying login failure; preserves the alpha24 LinkedIn fallback, expanded Help guide and existing picture/PDF/media tools."
+}
