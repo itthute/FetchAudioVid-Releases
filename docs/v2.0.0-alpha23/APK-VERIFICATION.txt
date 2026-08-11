@@ -1,0 +1,66 @@
+ITthute Fetch AudioVid v2.0.0-alpha23 - APK VERIFICATION
+=========================================================
+
+Package:      za.co.itthute.fetchaudiovid
+Version code: 20022
+Version name: 2.0.0-alpha23
+Compile SDK:  28
+Minimum SDK:  26
+Target SDK:   28
+
+SIGNED APK
+----------
+File: ITthuteFetchAudioVid-v2.0.0-alpha23.apk
+SHA-256: 2365bfeb9d11394d1cc5a94f56e4849c5d9474cec965efad349435308840e8ce
+
+apksigner verification:
+Verifies: YES
+v1 signing: false
+v2 signing: true
+Number of signers: 1
+
+Signer DN:
+CN=ITthute Fetch AudioVid Release, OU=Software Signing, O=ITthute (Pty) Ltd, L=Germiston, ST=Gauteng, C=ZA
+
+Signer certificate SHA-256:
+9df337ed2d87f165b60352f8c1e81ae070ad3905a6c67a0a90f766f39025c7cf
+
+Signer certificate SHA-1:
+fc4f8b8bb46b548ad3e2b360f878c5d5ede2eec0
+
+Key algorithm: RSA
+Key size: 4096 bits
+Public key SHA-256:
+d96c042da2d8d53521a60d0de583aaa80c082596ad3fc44f51c31fa8f8795ce7
+
+Signer matches retained 2026-v2 ITthute signer: PASS
+Same signer identity as alpha22: PASS
+versionCode 20022 > alpha22 versionCode 20021: PASS
+Expected in-place upgrade identity: PASS
+
+UNSIGNED PRACTICE APK
+---------------------
+File: ITthuteFetchAudioVid-v2.0.0-alpha23-unsigned.apk
+SHA-256: f20157664f5e6ce27471b5e1e0ddafd0e99e5ede385fa5fb2ced53e20bedc04f
+
+apksigner verify before signing: FAIL AS EXPECTED
+Observed result:
+DOES NOT VERIFY
+ERROR: Missing META-INF/MANIFEST.MF
+
+REGRESSION TESTS
+----------------
+LicensePolicyTest: PASS
+ActivationScenarioTest: PASS
+MediaUrlPolicyTest: PASS
+CookieFilePolicyTest: PASS
+ClipRangeRulesTest: PASS
+PostPictureSupportTest: PASS
+PicturePdfSupportTest: PASS
+JavaSyntaxCheck: PASS (20 files)
+source_regression_test: PASS
+All tests: PASS
+
+Private clean Android API 28 / Build Tools 28.0.3 build: PASS
+GitHub Actions run: 31450617971
+Job: 93654055440
