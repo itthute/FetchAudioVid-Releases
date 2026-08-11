@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20022,
+  "versionName": "2.0.0-alpha23",
+  "minAndroidApi": 26,
+  "apkUrl": "REPLACE_WITH_REVIEWED_ALPHA23_APK_URL_BEFORE_USE",
+  "sha256": "2365bfeb9d11394d1cc5a94f56e4849c5d9474cec965efad349435308840e8ce",
+  "releaseNotes": "Picture-aware post-download actions plus an on-device Pictures-to-PDF utility with natural filename ordering and one aspect-ratio-preserving image per page."
+}
