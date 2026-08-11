@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20021,
+  "versionName": "2.0.0-alpha22",
+  "minAndroidApi": 26,
+  "apkUrl": "REPLACE_WITH_ACTUAL_RELEASE_ASSET_URL_IF_ALPHA22_IS_PROMOTED",
+  "sha256": "910c7401640543b5dac2f827a48fbace7993c702dce006bc7ee3bf5b11a4e349",
+  "releaseNotes": "Adds separate Facebook/Instagram/LinkedIn cookie profiles, Facebook share-link redirect fallback, lnkd.in picture-link support and expanded social-picture diagnostics."
+}
