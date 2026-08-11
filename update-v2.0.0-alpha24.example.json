@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "versionCode": 20023,
+  "versionName": "2.0.0-alpha24",
+  "minAndroidApi": 26,
+  "apkUrl": "REPLACE_WITH_REVIEWED_ALPHA24_APK_URL_BEFORE_USE",
+  "sha256": "961da46109e216e142577a3b60035ab8e41c17096e753ba6e3e0c8bf7548a092",
+  "releaseNotes": "Adds a yt-dlp-first LinkedIn Video fallback for authorised videos and expands Help into a complete task, troubleshooting and issue-reporting guide while retaining picture-post/PDF improvements."
+}
